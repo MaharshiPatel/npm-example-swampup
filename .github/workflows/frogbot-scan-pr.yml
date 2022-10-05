@@ -34,7 +34,7 @@ jobs:
 
       # The full template list with the required GitHub Actions can be found at https://github.com/jfrog/frogbot/tree/master/templates/github-actions/scan-pull-request
 
-      - uses: jfrog/frogbot@9304d3b1d8e05a1b5fc0ba9ebf9ffbd495386250
+      - uses: jfrog/frogbot@v2
         env:
           # [Mandatory]
           # JFrog platform URL (This functionality requires version 3.29.0 or above of Xray)
@@ -66,7 +66,7 @@ jobs:
           
           # [Optional, default: "TRUE"]
           # Fails the Frogbot task if any security issue is found.
-          JF_FAIL: "TRUE"
+          # JF_FAIL: "TRUE"
 
           # [Mandatory when using .NET]
           # The command that installs the dependencies
